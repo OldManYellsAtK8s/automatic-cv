@@ -11,9 +11,9 @@ jobs:
   build-and-publish:
     runs-on: ubuntu-latest
     env:
-      DEST_REPO: your-org/your-destination-repo
-      DEST_BRANCH: main
-      DEST_PATH: docs/pdfs
+      DEST_REPO: oldmanyellsatk8s/tricloud-www
+      DEST_BRANCH: develop
+      DEST_PATH: docs/
       DEST_FILE: DISCOVERY.pdf
     steps:
       - name: Checkout source
