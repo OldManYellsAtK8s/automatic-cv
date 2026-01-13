@@ -1,6 +1,6 @@
 ![title](images/redhat-logo.png)
 
-# OpenShift Discovery Plan (Example)
+# OpenShift Discovery Plan
 
 > **Document status:** Draft  
 > **Last updated:** 2026-01-13  
