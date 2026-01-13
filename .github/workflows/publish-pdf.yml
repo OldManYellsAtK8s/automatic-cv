@@ -1,0 +1,58 @@
+name: Generate and publish PDF
+
+on:
+  push:
+    paths:
+      - docs/DISCOVERY.md
+      - docs/images/**
+  workflow_dispatch:
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    env:
+      DEST_REPO: your-org/your-destination-repo
+      DEST_BRANCH: main
+      DEST_PATH: docs/pdfs
+      DEST_FILE: DISCOVERY.pdf
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Prepare output directory
+        run: mkdir -p pdfs
+
+      - name: Generate PDF
+        uses: docker://pandoc/latex:3.1
+        with:
+          args: >-
+            docs/DISCOVERY.md
+            --from=gfm
+            --resource-path=docs
+            --output=pdfs/DISCOVERY.pdf
+
+      - name: Checkout destination repo
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ env.DEST_REPO }}
+          ref: ${{ env.DEST_BRANCH }}
+          token: ${{ secrets.DEST_REPO_TOKEN }}
+          path: dest-repo
+
+      - name: Copy PDF into destination repo
+        run: |
+          mkdir -p "dest-repo/${DEST_PATH}"
+          cp "pdfs/DISCOVERY.pdf" "dest-repo/${DEST_PATH}/${DEST_FILE}"
+
+      - name: Commit and push if changed
+        run: |
+          cd dest-repo
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if git status --porcelain | grep -q .; then
+            git add "${DEST_PATH}/${DEST_FILE}"
+            git commit -m "Update discovery PDF"
+            git push
+          else
+            echo "No changes to commit."
+          fi
