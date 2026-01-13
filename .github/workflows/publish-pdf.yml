@@ -21,15 +21,18 @@ jobs:
 
       - name: Prepare output directory
         run: mkdir -p pdfs
-
-      - name: Generate PDF
-        uses: docker://pandoc/latex:3.1
+  converttopdf:
+    name: Build PDF
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: baileyjm02/markdown-to-pdf@v1
         with:
-          args: >-
-            docs/DISCOVERY.md
-            --from=gfm
-            --resource-path=docs
-            --output=pdfs/DISCOVERY.pdf
+          input_dir: docs
+          output_dir: pdfs
+          images_dir: docs/images
+          image_import: ./images
+          build_html: false
 
       - name: Checkout destination repo
         uses: actions/checkout@v4
