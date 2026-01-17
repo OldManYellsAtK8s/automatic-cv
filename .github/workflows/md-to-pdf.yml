@@ -98,14 +98,20 @@ jobs:
           cp downloaded/Craig-Simpson-CV-*.pdf target-repo/docs/
           
           # Navigate to target repo
-          cd target-repo
+          cd target-repo/docs
+          
+          # Create symlink to the latest CV (without date)
+          ln -sf Craig-Simpson-CV-$(date +'%Y-%m-%d').pdf Craig-Simpson-CV.pdf
+          
+          # Go back to target repo root
+          cd ..
           
           # Configure git
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           
           # Add, commit and push
-          git add docs/Craig-Simpson-CV-*.pdf
+          git add docs/Craig-Simpson-CV-*.pdf docs/Craig-Simpson-CV.pdf
           git diff-index --quiet HEAD || git commit -m "Update Craig Simpson CV ($(date +'%Y-%m-%d'))"
           git push
       
