@@ -1,0 +1,14 @@
+terraform-ec2/.terraform/*
+terraform-ec2/*.tfstate
+terraform-ec2/*.tfstate.*
+terraform-ec2/crash.log
+terraform-ec2/crash.*.log
+terraform-ec2/*.tfvars
+terraform-ec2/*.tfvars.json
+terraform-ec2/override.tf
+terraform-ec2/override.tf.json
+terraform-ec2/*_override.tf
+terraform-ec2/*_override.tf.json
+terraform-ec2/.terraformrc
+terraform-ec2/terraform.rc
+terraform-ec2/.terraform.lock.hcl
