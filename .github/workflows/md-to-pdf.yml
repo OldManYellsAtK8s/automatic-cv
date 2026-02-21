@@ -33,7 +33,7 @@ jobs:
           DATE=$(date +'%Y-%m-%d')
           
           # Combine all markdown files (sorted by name)
-          find . -name "*.md" -type f | sort | xargs cat > combined.md
+          find . -name "docs/*.md" -type f | sort | xargs cat > combined.md
           
           # Convert to PDF with pandoc
           pandoc combined.md \
