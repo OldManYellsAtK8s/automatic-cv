@@ -1,11 +1,11 @@
 # Craig Simpson  
 **Lead Cloud Architect / Engineer**  
-📍 Cardiff, UK | 🌍 Open to Remote & Relocation  
-📞 +44 7466 734440 | **GitHub**: [OldManYellsAtK8s](https://github.com/OldManYellsAtK8s)
+Cardiff, UK | Open to Remote & Relocation  
++44 7466 734440 | **GitHub**: [OldManYellsAtK8s](https://github.com/OldManYellsAtK8s)
 
 ---
 
-## 💡 Professional Summary
+## Professional Summary
 
 Lead Cloud Architect and DevOps specialist with 10+ years of experience designing, scaling, and automating high‑availability multi‑cloud environments across AWS, Azure, and OpenStack.  
 Deep hands‑on expertise with Red Hat OpenShift, Kubernetes, and Terraform, combined with a track record of guiding teams through complex cloud transformations.  
@@ -13,7 +13,7 @@ Trusted by startups and enterprises alike to drive modernization and DevSecOps a
 
 ---
 
-## 🧭 Consulting Highlights
+## Consulting Highlights
 
 - Architected OpenStack and OpenShift platforms for telecom, finance, and media clients across EMEA.  
 - Advised CTOs and engineering leads on multi‑cloud strategy, CI/CD automation, and infrastructure modernization.  
@@ -24,7 +24,7 @@ Trusted by startups and enterprises alike to drive modernization and DevSecOps a
 
 ---
 
-## 🧠 Core Skills
+## Core Skills
 
 **Cloud Platforms:** AWS, Azure, Oracle, DigitalOcean, Cloudflare  
 **Private Cloud & OpenStack:** Red Hat OpenStack, Canonical OpenStack, CEPH, Keystone, Neutron, Nova, Heat  
@@ -38,7 +38,7 @@ Trusted by startups and enterprises alike to drive modernization and DevSecOps a
 
 ---
 
-## 🧩 Professional Experience
+## Professional Experience
 
 ### **Principal Cloud Architect** | Bauer Media — Remote  
 _Feb 2025 – Oct 2025_  
