@@ -1,0 +1,126 @@
+name: MD to PDF Pipeline
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - '**.md'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  convert-and-upload:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout source repository
+        uses: actions/checkout@v4
+      
+      - name: Install Pandoc
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc texlive-latex-base texlive-fonts-recommended texlive-latex-extra
+      
+      - name: Combine and convert MD files to PDF
+        run: |
+          # Create output directory
+          mkdir -p output
+          
+          # Set date variable
+          DATE=$(date +'%Y-%m-%d')
+          
+          # Convert to PDF with pandoc
+          pandoc docs/CV.md \
+            -o output/Craig-Simpson-CV-${DATE}.pdf \
+            --pdf-engine=pdflatex \
+            --variable geometry:margin=1in \
+            --toc \
+            --metadata title="Craig Simpson CV" \
+            --metadata date="${DATE}"
+      
+      - name: Upload PDF as artifact
+        run: echo "PDF_NAME=Craig-Simpson-CV-$(date +'%Y-%m-%d').pdf" >> $GITHUB_ENV
+      
+      - name: Upload PDF as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: craig-simpson-cv
+          path: output/${{ env.PDF_NAME }}
+          retention-days: 90
+      
+      - name: Create/Update Release Tag
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git tag -f latest-cv
+          git push -f origin latest-cv
+      
+      - name: Upload PDF to release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: latest-cv
+          name: Latest CV
+          files: output/${{ env.PDF_NAME }}
+          draft: false
+          prerelease: false
+          token: ${{ secrets.GITHUB_TOKEN }}
+  
+  use-in-other-project:
+    needs: convert-and-upload
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Download PDF artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: craig-simpson-cv
+          path: ./downloaded
+      
+      - name: Checkout target repository
+        uses: actions/checkout@v4
+        with:
+          repository: oldmanyellsatk8s/tricloud-www
+          token: ${{ secrets.PAT_TOKEN }}
+          path: target-repo
+      
+      - name: Copy PDF to target repository
+        run: |
+          # Create docs directory if it doesn't exist
+          mkdir -p target-repo/docs
+          
+          # Copy the PDF with date in filename
+          cp downloaded/Craig-Simpson-CV-*.pdf target-repo/docs/
+          
+          # Navigate to target repo
+          cd target-repo/docs
+          
+          # Create symlink to the latest CV (without date)
+          ln -sf Craig-Simpson-CV-$(date +'%Y-%m-%d').pdf Craig-Simpson-CV.pdf
+          
+          # Go back to target repo root
+          cd ..
+          
+          # Configure git
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Add, commit and push
+          git add docs/Craig-Simpson-CV-*.pdf docs/Craig-Simpson-CV.pdf
+          git diff-index --quiet HEAD || git commit -m "Update Craig Simpson CV ($(date +'%Y-%m-%d'))"
+          git push
+      
+      - name: Create issue in target repo (optional)
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.PAT_TOKEN }}
+          script: |
+            const date = new Date().toISOString().split('T')[0];
+            await github.rest.issues.create({
+              owner: 'oldmanyellsatk8s',
+              repo: 'tricloud-www',
+              title: 'CV Updated - ' + date,
+              body: `Craig Simpson CV has been updated and uploaded.\n\nFilename: Craig-Simpson-CV-${date}.pdf\nGenerated at: ${new Date().toISOString()}`
+            });
