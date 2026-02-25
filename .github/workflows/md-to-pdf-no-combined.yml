@@ -1,4 +1,4 @@
-name: MD to PDF Pipeline
+name: MD to PDF Pipeline Combined
 
 on:
   push:
