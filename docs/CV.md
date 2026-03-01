@@ -1,4 +1,5 @@
-# Craig Simpson  
+# Craig Simpson
+
 **Lead Cloud Architect / Engineer**  
 Cardiff, UK | Open to Remote & Relocation  
 +44 7466 734440 | **GitHub**: [OldManYellsAtK8s](https://github.com/OldManYellsAtK8s)
@@ -41,21 +42,27 @@ Trusted by startups and enterprises alike to drive modernization and DevSecOps a
 ## Professional Experience
 
 ### **Principal Cloud Architect** | Bauer Media — Remote  
+
 _Feb 2025 – Oct 2025_  
+
 - Lead architect for multi‑region scaling of the Rayo audio app backend across AWS and Azure.  
 - Designed GDPR‑compliant right‑shoring for databases, ensuring full EU data sovereignty.  
 - Member of Bauer Digital Audio’s Technology Steering Board.  
 - Authored integration patterns, Terraform modules, and DevSecOps guardrails adopted globally.
 
 ### **Cloud Architect** | KX — Remote  
+
 _Jul 2023 – Dec 2024_  
+
 - Delivered OpenShift and Kubernetes‑based analytics platforms for global enterprise clients.  
 - Designed cloud‑native architecture supporting multi‑tenant, high‑performance workloads.  
 - Developed Terraform/Helm frameworks, standardizing hybrid‑cloud deployments.  
 - Implemented GitOps via ArgoCD and GitLab CI/CD — boosted release velocity by 50%.
 
 ### **Lead Cloud Architect (OpenStack / OpenShift / DevOps)** | Rackspace Technology — Remote  
+
 _Apr 2021 – Feb 2023_  
+
 - EMEA SME for OpenStack/OpenShift for government and finance sectors.  
 - Built OpenShift clusters integrated with OpenStack and CEPH for secure workloads.  
 - Designed hybrid-cloud CI/CD automation pipelines.  
@@ -63,12 +70,16 @@ _Apr 2021 – Feb 2023_
 - Mentored teams on DevOps transformation.
 
 ### **Senior DevOps Engineer** | SECCL — Bath  
+
 _Jan 2020 – Apr 2020_  
+
 - Migrated monolith to serverless microservices using AWS Lambda.  
 - Introduced observability with Grafana and CloudWatch.  
 - Reduced manual ops by 70% via CI/CD + IaC.
 
 ### **Cloud Architect** | O2 (Telefonica UK) — Slough / Remote  
+
 _Nov 2019 – Dec 2020_  
+
 - Deployed OpenStack-based private cloud supporting O2’s 5G packet-core.  
 - Automated infra with Ansible + Heat templates — cut
