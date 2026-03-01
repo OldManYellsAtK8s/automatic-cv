@@ -37,7 +37,6 @@ jobs:
             -o output/Craig-Simpson-CV-${DATE}.pdf \
             --pdf-engine=pdflatex \
             --variable geometry:margin=1in \
-            --toc \
             --metadata title="Craig Simpson CV" \
             --metadata date="${DATE}"
       
