@@ -8,34 +8,37 @@ Cardiff, UK | Open to Remote & Relocation
 
 ## Professional Summary
 
-Lead Cloud Architect and DevOps specialist with 10+ years of experience designing, scaling, and automating high‑availability multi‑cloud environments across AWS, Azure, and OpenStack.  
-Deep hands‑on expertise with Red Hat OpenShift, Kubernetes, and Terraform, combined with a track record of guiding teams through complex cloud transformations.  
+Lead Cloud Architect and DevOps specialist with 10+ years of experience designing, scaling, and automating high‑availability multi‑cloud environments across AWS, Azure, and OpenStack.
+
+Years of hands on experience with Red Hat OpenShift, Kubernetes, and Terraform, combined with a track record of guiding teams through complex cloud transformations.
+
 Trusted by startups and enterprises alike to drive modernization and DevSecOps adoption — blending strategy, automation, and technical excellence.
 
 ---
 
 ## Consulting Highlights
 
-- Architected OpenStack and OpenShift platforms for telecom, finance, and media clients across EMEA.  
+- Architected OpenStack and OpenShift platforms for telecom, finance, and media clients across EMEA.
+- Guided a greenfield OpenStack project in Saudi Arabia from RFP, to implementation.
 - Advised CTOs and engineering leads on multi‑cloud strategy, CI/CD automation, and infrastructure modernization.  
 - Reduced provisioning times by up to 60% through IaC and workflow automation.  
-- Led transformation workshops to drive DevOps culture and operational maturity.  
+- Led transformation and knowledge sharing workshops to drive DevOps culture and operational maturity.  
 - Delivered governance models and reusable Terraform templates enabling secure, scalable cloud deployments.  
-- Acted as SME for a mission‑critical OpenShift installation supporting UK 999 emergency systems.
+- Acted as SME for a mission‑critical OpenShift installation supporting UK 999 emergency systems, and also the National Grid's Balancing programme.
 
 ---
 
 ## Core Skills
 
 **Cloud Platforms:** AWS, Azure, Oracle, DigitalOcean, Cloudflare  
-**Private Cloud & OpenStack:** Red Hat OpenStack, Canonical OpenStack, CEPH, Keystone, Neutron, Nova, Heat  
-**Containers & Orchestration:** Kubernetes, Red Hat OpenShift, Docker  
-**Infrastructure as Code:** Terraform, Ansible, Helm, SaltStack  
+**Private Cloud & OpenStack:** Red Hat OpenStack, Canonical OpenStack, Software Defined Storage, Software Defined Networking.
+**Containers & Orchestration:** Kubernetes, Red Hat OpenShift, Docker, EKS (AWS), AKS (AZure)
+**Infrastructure as Code:** Terraform, Ansible, Helm, SaltStack
 **DevOps & CI/CD:** GitHub Actions, GitLab CI, Jenkins, ArgoCD, Concourse, Drone.io  
 **Monitoring & Observability:** Elastic Stack, DataDog, Splunk, Grafana, CloudWatch, Azure Monitor, OpenSearch  
 **Networking & Security:** AWS VPC, Azure Networking, F5, Nginx, HAProxy, Brocade  
-**Languages:** Python, Bash  
-**Methodologies:** DevSecOps, Agile, Site Reliability Engineering  
+**Languages:** Python, Bash, Ansible, Terraform, Perl, Java
+**Methodologies:** DevSecOps, Agile, Site Reliability Engineering, Defense in Depth
 
 ---
 
