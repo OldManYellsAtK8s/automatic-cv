@@ -50,15 +50,6 @@ _Dec 2025 – Apr 2026_
 - Led stakeholder engagement sessions on security frameworks, aligning platform architecture with regulatory requirements.  
 - Produced architecture decision records and governance artefacts for multi-team consumption.
 
-### **Principal Cloud Architect** | Bauer Media — Remote  
-
-_Feb 2025 – Oct 2025_  
-
-- Lead architect for multi‑region scaling of the Rayo audio app backend across AWS and Azure.  
-- Designed GDPR‑compliant right‑shoring for databases, ensuring full EU data sovereignty.  
-- Member of Bauer Digital Audio’s Technology Steering Board.  
-- Authored integration patterns, Terraform modules, and DevSecOps guardrails adopted globally.
-
 ### **OpenShift Virtualization Architect** | Motorola — Remote  
 
 _Nov 2024 – Jan 2025_  
@@ -68,11 +59,20 @@ _Nov 2024 – Jan 2025_
 - Performed platform hardening in line with CIS benchmarks and government security standards.  
 - Authored operational runbooks covering day-2 operations, upgrade procedures, and incident response for platform teams.
 
+### **Principal Cloud Architect** | Bauer Media — Remote  
+
+_Feb 2025 – Oct 2025_  
+
+- Lead architect for multi‑region scaling of the Rayo audio app backend across AWS and Azure.  
+- Designed GDPR‑compliant right‑shoring for databases, ensuring full EU data sovereignty.  
+- Member of Bauer Digital Audio’s Technology Steering Board.  
+- Authored integration patterns, Terraform modules, and DevSecOps guardrails adopted globally.
+
 ### **Cloud Architect** | KX — Remote  
 
 _Jul 2023 – Dec 2024_  
 
-- Delivered OpenShift and Kubernetes‑based analytics platforms for global enterprise clients.  
+- Delivered OpenShift and Kubernetes‑based analytics platforms for global enterprise clients, including market makers and a stock exchange. 
 - Designed cloud‑native architecture supporting multi‑tenant, high‑performance workloads.  
 - Developed Terraform/Helm frameworks, standardizing hybrid‑cloud deployments.  
 - Implemented GitOps via ArgoCD and GitLab CI/CD — boosted release velocity by 50%.
