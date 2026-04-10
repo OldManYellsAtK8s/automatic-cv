@@ -41,6 +41,15 @@ Trusted by startups and enterprises alike to drive modernization and DevSecOps a
 
 ## Professional Experience
 
+### **Lead OpenShift Architect** | National Grid — Remote  
+
+_Dec 2025 – Apr 2026_  
+
+- Designed CNI secure system architecture for OpenShift platforms supporting critical national infrastructure.  
+- Delivered High-Level Design (HLD) and Low-Level Design (LLD) documentation for platform teams.  
+- Led stakeholder engagement sessions on security frameworks, aligning platform architecture with regulatory requirements.  
+- Produced architecture decision records and governance artefacts for multi-team consumption.
+
 ### **Principal Cloud Architect** | Bauer Media — Remote  
 
 _Feb 2025 – Oct 2025_  
@@ -49,6 +58,15 @@ _Feb 2025 – Oct 2025_
 - Designed GDPR‑compliant right‑shoring for databases, ensuring full EU data sovereignty.  
 - Member of Bauer Digital Audio’s Technology Steering Board.  
 - Authored integration patterns, Terraform modules, and DevSecOps guardrails adopted globally.
+
+### **OpenShift Virtualization Architect** | Motorola — Remote  
+
+_Nov 2024 – Jan 2025_  
+
+- Architected OpenShift Virtualization deployment within a fully airgapped CNI environment with restricted network egress.  
+- Defined disconnected deployment strategy, including mirror registry setup and operator lifecycle management without internet access.  
+- Performed platform hardening in line with CIS benchmarks and government security standards.  
+- Authored operational runbooks covering day-2 operations, upgrade procedures, and incident response for platform teams.
 
 ### **Cloud Architect** | KX — Remote  
 
@@ -81,5 +99,22 @@ _Jan 2020 – Apr 2020_
 
 _Nov 2019 – Dec 2020_  
 
-- Deployed OpenStack-based private cloud supporting O2’s 5G packet-core.  
-- Automated infra with Ansible + Heat templates — cut
+- Designed and deployed OpenStack‑based private cloud supporting O2’s 5G packet‑core infrastructure.  
+- Automated deployments with Ansible and Heat templates, cutting provisioning time by 40%.  
+- Authored operations documentation and continuity playbooks for ongoing support.
+
+### **Senior Red Hat Infrastructure Engineer** | Crossvale — Remote / On‑Site  
+
+_Mar 2019 – Nov 2019_  
+
+- Delivered OpenShift, OpenStack, and CEPH infrastructure deployments for enterprise clients.  
+- Automated provisioning with Ansible and developed Kubernetes deployment frameworks.  
+- Provided Red Hat engineering support and training during on‑site engagements.
+
+### **Senior Systems Engineer → Platform Engineer (DevOps)** | thevoicefactory / Capgemini / Backbase  
+
+_2015 – 2019_  
+
+- Designed and deployed OpenStack clusters and CI/CD systems across enterprise workloads.  
+- Automated infrastructure builds with Terraform and SaltStack.  
+- Implemented Kubernetes‑based environments to improve scalability and reliability.
